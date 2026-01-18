@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru-KZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xBet: официальный доступ к платформе через 1x-bet.trade</title>
+    <meta name="description" content="1xBet официальный сайт - международная платформа онлайн-казино. Регистрация, вход через зеркало 1x-bet.trade. Безопасные ставки 24/7.">
+    <link rel="canonical" href="https://1x-bet.trade">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #0f1120 0%, #1a1f35 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 17, 32, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: bold;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 4rem);
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .hero-image {
+            max-width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+            margin: 2rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+
+        .content-card {
+            background: rgba(26, 31, 53, 0.8);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(45deg, #00d4ff, #ff6b35);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: #00d4ff;
+            margin: 2rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #00d4ff;
+            font-weight: 600;
+        }
+
+        .section-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+            margin: 24px auto;
+            display: block;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: rgba(26, 31, 53, 0.6);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question:hover {
+            color: #00d4ff;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #00d4ff;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 0 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(15, 17, 32, 0.95);
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .age-warning {
+            color: #ff6b35;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2rem 0;
+            }
+
+            .content-card {
+                padding: 1rem;
+            }
+
+            nav ul {
+                gap: 0.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">1xBet</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">О платформе</a></li>
+                        <li><a href="#features">Возможности</a></li>
+                        <li><a href="#security">Безопасность</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>1xBet — официальная платформа онлайн-казино</h1>
+                <img src="img/1x-bet-trade-h2-3.jpg" alt="1xBet официальная платформа онлайн-казино" loading="lazy" class="hero-image">
+                <p>1xBet — международный сервис, который предлагает широкий ассортимент игровых продуктов, объединённых на одной платформе. Работа ведётся в режиме 24/7, что позволяет пользователям из разных стран заходить в свои аккаунты в любое удобное время.</p>
+                <a href="https://onexbetsloto.xyz/qFm3gq?source=1x-bet.trade" class="cta-button">Начать игру</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="content-card fade-in">
+                    <h2>Что представляет собой онлайн-казино 1xBet</h2>
+                    <img src="img/1x-bet-trade-h2-6.jpg" alt="Что представляет собой онлайн-казино 1xBet" loading="lazy" class="section-image">
+                    <p>1xBet – это комплексная онлайн-платформа, объединяющая множество азартных сервисов в одной экосистеме. В основе структуры 1xbet лежит удобный интерфейс, который разделён на несколько ключевых разделов: ставки на спорт, казино, live-казино и виртуальные игры. Такой подход позволяет пользователям легко переключаться между различными развлечениями без необходимости повторной регистрации.</p>
+                    <p>Для входа на платформу предусмотрена простая процедура <strong>1xbet регистрация</strong>. После её прохождения становится доступен <strong>1xbet вход</strong>, который можно выполнить как через официальный сайт, так и через <strong>1xbet зеркало</strong>, что особенно удобно в случае временной блокировки основного домена. <strong>1хбет</strong> сохраняет стабильную работу и безопасность аккаунта, что ценят многие игроки.</p>
+                    <p>Пользователь взаимодействует с сервисами через адаптивный интерфейс, где данные о балансах, ставках и бонусах представлены наглядно. Навигация внутри <strong>1xbet официального сайта</strong> построена так, что новичок может быстро разобраться с функционалом, а опытный игрок – использовать все возможности платформы без лишних кликов.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <h2>Основные возможности платформы 1xBet</h2>
+                    <img src="img/1x-bet-trade-h2-9.jpg" alt="Основные возможности платформы 1xBet" loading="lazy" class="section-image">
+                    <p>Платформа <strong>1xBet</strong> отличается удобной навигацией и широким набором инструментов для пользователей. На <strong>1xbet официальном сайте</strong> легко найти разделы с различными играми — от классических казино до ставок на спорт. Чтобы начать работу, требуется <strong>1xbet регистрация</strong>, она занимает пару минут и открывает доступ к персональному кабинету.</p>
+                    <p><strong>1xbet вход</strong> в личный кабинет позволяет быстро управлять счетом, просматривать историю ставок и настраивать профиль. Важной частью платформы являются игровые разделы, которые организованы по категориям: слоты, рулетка, карточные игры, а также live-казино с прямыми трансляциями.</p>
+                    <p>Дополнительно доступны инструменты для удобства игроков: фильтры по жанрам, поиск по названию, а также возможность использовать <strong>1xbet зеркало</strong> — резервный адрес сайта для обхода блокировок. Все элементы интерфейса адаптированы под разные устройства, что делает работу комфортной на смартфонах и компьютерах.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <h2>Официальный формат работы онлайн-казино 1xBet</h2>
+                    <p>Пользовательский опыт на 1xbet организован через единый аккаунт, который открывает доступ ко всем сервисам платформы. Процесс <strong>1xbet регистрация</strong> предусматривает создание одного профиля, с которого можно сразу перейти к ставкам, играм и другим функциям без повторных входов. Чтобы попасть на сайт, используется <strong>1xbet вход</strong>, обеспечивающий стабильное соединение и оперативный доступ.</p>
+                    <p>Основным источником доступа остаётся <strong>1xbet официальный сайт</strong>, однако при его временной недоступности пользователи применяют <strong>1xbet зеркало</strong>. Эти зеркала полностью дублируют функционал оригинального портала, гарантируя беспрерывность работы и сохранение истории ставок. Такой формат позволяет не терять сессии и сохранять удобство управления аккаунтом.</p>
+                    <p>Платформа <strong>1хбет</strong> поддерживает стабильность и скорость работы, что важно для оперативных ставок и игр. Система автоматически синхронизирует данные, обеспечивая актуальность и безопасность информации. Наличие единого входа упрощает мониторинг активности и управление личным кабинетом на 1x-bet.trade.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <h2>Вход в личный кабинет онлайн-казино 1xBet</h2>
+                    <p>Личный кабинет на 1xbet — это центр управления аккаунтом для каждого пользователя. Здесь легко отслеживать историю ставок и результатов, просматривать баланс и управлять настройками. Авторизация на 1xbet обычна и быстра, но если проблем с доступом на <strong>1xbet официальный сайт</strong>, можно использовать <strong>1xbet зеркало</strong> для обхода блокировок.</p>
+                    <p>Вход на платформу требует простой процедуры <strong>1xbet регистрация</strong>, после которой открываются все возможности сайта: от быстрых пополнений до участия в акциях и турнирах. В личном кабинете <strong>1хбет</strong> удобно контролировать все операции, настройки безопасности и личные данные, что делает игру комфортнее и безопаснее.</p>
+                    <p>Запомните, что доступ к личному кабинету — это ключ к полному функционалу 1xbet, включая управление бонусами и просмотр статистики по всем действиям. Такая система помогает лучше ориентироваться в работе онлайн-казино и сохранять все необходимые данные под рукой.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <h2>Регистрация в онлайн-казино 1xBet</h2>
+                    <p>Создание аккаунта на 1xbet — обязательный шаг для полного доступа к функционалу платформы. Регистрация открывает возможности не только для ставок и игр, но и для управления своими финансами, участия в акциях и отслеживания результатов. На <strong>1xbet официальный сайт</strong> процесс занимает несколько минут и не требует сложных действий.</p>
+                    <p>Чтобы начать, достаточно ввести базовые данные и подтвердить их стандартными способами. При проблемах с доступом часто помогает <strong>1xbet зеркало</strong> — альтернативный адрес сайта, который позволяет обойти блокировки. Для удобства пользователя предусмотрен быстрый <strong>1xbet вход</strong> через соцсети или телефон.</p>
+                    <p>Важно помнить, что у каждого аккаунта есть личный кабинет, где сохраняется история ставок и настроек. <strong>1xbet регистрация</strong> обеспечивает защиту данных и позволяет использовать все функции без ограничений. Такой аккаунт становится ключом к полному опыту игры на платформе <strong>1хбет</strong>, делая процесс удобным и безопасным.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <h2>Игровые разделы и сервисы онлайн-казино 1xBet</h2>
+                    <img src="img/1x-bet-trade-h2-12.jpg" alt="Игровые разделы и сервисы онлайн-казино 1xBet" loading="lazy" class="section-image">
+                    <p>Платформа 1xbet предлагает пользователям широкий спектр игровых форматов. В <strong>1хбет</strong> есть классические казино с разнообразием слотов, настольных игр и лотерей. Для тех, кто ценит живое общение, предусмотрен раздел с играми с живыми дилерами.</p>
+                    <p>Удобство использования поддерживается благодаря гибким сервисам платформы. Например, чтобы получить доступ к 1xbet, можно использовать официальный сайт или альтернативные варианты — <strong>1xbet зеркало</strong>. Это полезно, если основной домен 1x-bet.trade временно недоступен.</p>
+                    <p>Регистрация на платформе занимает минимум времени, что важно для новых игроков. <strong>Вход на 1xbet</strong> также не вызывает сложностей благодаря интуитивному интерфейсу. Пользователи могут легко переключаться между игровыми разделами, не теряя удобства и скорости работы.</p>
+                    <p>Кроме того, 1xbet позволяет создавать индивидуальные профили и управлять ставками в режиме реального времени. Все сервисы поддерживаются современными технологиями безопасности, что сохраняет комфорт и надежность использования.</p>
+                </div>
+
+                <div class="content-card fade-in" id="security">
+                    <h2>Безопасность данных пользователей в 1xBet</h2>
+                    <p>При работе с <strong>1xbet официальный сайт</strong> и его зеркалами важным аспектом является защита личных данных и учетных записей. В <strong>1хбет</strong> безопасность строится на совместной ответственности платформы и пользователя. Сама платформа применяет стандартные методы для сохранения конфиденциальности информации — например, ограничивает доступ к аккаунтам и следит за подозрительной активностью. Для пользователей же ключ к безопасности — это надежный пароль и осторожный подход при <strong>1xbet регистрация</strong> и <strong>1xbet вход</strong>.</p>
+                    <p>От правильного использования <strong>1xbet зеркало</strong> зависит стабильность и защищенность соединения в нестабильных сетях. Компания обращает внимание на важность периодического обновления пароля и проверки настроек приватности в личном кабинете. Пользователи, в свою очередь, должны избегать использования общедоступных устройств для авторизации, чтобы минимизировать риски.</p>
+                    <p>Итог: несмотря на то, что 1xbet заботится о защите, участник игрового процесса всегда остается главным хранителем своей информации и безопасности.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Часто задаваемые вопросы об онлайн-казино 1xBet</h2>
+                <p>В этом разделе собраны ответы на популярные вопросы, которые возникают у пользователей при работе с 1xbet. Здесь объясним нюансы <strong>1xbet регистрации</strong>, способы безопасного <strong>1xbet входа</strong>, а также разберём, зачем нужен <strong>1xbet официальный сайт</strong> и как использовать <strong>1xbet зеркало</strong>.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question">Что нужно для 1xbet регистрация?</button>
+                    <div class="faq-answer">
+                        <p>Для регистрации в 1xbet достаточно указать базовые данные: номер телефона или email, выбрать валюту счёта и создать пароль. Процесс простой, но важно вводить корректную информацию, чтобы потом без проблем сделать <strong>1xbet вход</strong> и использовать все возможности казино.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Как выполнить 1xbet вход на сайт?</button>
+                    <div class="faq-answer">
+                        <p>Вход в 1xbet осуществляется через официальный сайт, используя номер телефона, email или логин и пароль. Если основной адрес недоступен, на помощь приходит <strong>1xbet зеркало</strong> — альтернативный домен, позволяющий не прерывать игру.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Почему стоит использовать 1xbet официальный сайт?</button>
+                    <div class="faq-answer">
+                        <p><strong>1xbet официальный сайт</strong> — главный источник актуальной информации и надежный доступ к личному кабинету. Он обновляется регулярно, предлагая новые функции и обеспечивая безопасность личных данных.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Что такое 1xbet зеркало и зачем оно нужно?</button>
+                    <div class="faq-answer">
+                        <p><strong>1xbet зеркало</strong> — это точная копия официального сайта, которая помогает обходить блокировки провайдеров. Это удобно, если стандартный адрес недоступен, и требуется быстрый <strong>1xbet вход</strong> без потери функционала.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Безопасно ли использовать официальный сервис 1xBet?</button>
+                    <div class="faq-answer">
+                        <p>Использование официального сайта 1xbet и его функций обеспечивает базовый уровень безопасности для пользователей. При <strong>1xbet регистрации</strong> важно вводить личные данные только на проверенных страницах, чтобы избежать утечки информации.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="age-warning">18+</div>
+            <p>Игра может вызывать зависимость. Играйте ответственно.</p>
+            <p>&copy; 2024 1x-bet.trade. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что нужно для 1xbet регистрация?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для регистрации в 1xbet достаточно указать базовые данные: номер телефона или email, выбрать валюту счёта и создать пароль. Процесс простой, но важно вводить корректную информацию, чтобы потом без проблем сделать 1xbet вход и использовать все возможности казино."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как выполнить 1xbet вход на сайт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вход в 1xbet осуществляется через официальный сайт, используя номер телефона, email или логин и пароль. Если основной адрес недоступен, на помощь приходит 1xbet зеркало — альтернативный домен, позволяющий не прерывать игру."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему стоит использовать 1xbet официальный сайт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1xbet официальный сайт — главный источник актуальной информации и надежный доступ к личному кабинету. Он обновляется регулярно, предлагая новые функции и обеспечивая безопасность личных данных."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое 1xbet зеркало и зачем оно нужно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1xbet зеркало — это точная копия официального сайта, которая помогает обходить блокировки провайдеров. Это удобно, если стандартный адрес недоступен, и требуется быстрый 1xbet вход без потери функционала."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Безопасно ли использовать официальный сервис 1xBet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Использование официального сайта 1xbet и его функций обеспечивает базовый уровень безопасности для пользователей. При 1xbet регистрации важно вводить личные данные только на проверенных страницах, чтобы избежать утечки информации."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isActive = this.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    faqQuestions.forEach(q => {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('active');
+                    });
+                    
+                    // Toggle current item
+                    if (!isActive) {
+                        this.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // CTA button tracking
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            // Analytics tracking can be added here
+            console.log('CTA button clicked');
+        });
+
+        // Mobile menu toggle (if needed)
+        function toggleMobileMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('mobile-active');
+        }
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Performance optimization
+        let ticking = false;
+        function updateScrollPosition() {
+            // Add scroll-based animations here if needed
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollPosition);
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html>
